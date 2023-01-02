@@ -45,3 +45,8 @@ motorcycle.go()
 #vehicle.stop()
 car.stop()
 motorcycle.stop()
+
+
+
+###simple explanation of abstract class in python....................
+https://youtu.be/TeDlx2Klij0
