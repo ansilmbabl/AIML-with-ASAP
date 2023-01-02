@@ -1,0 +1,22 @@
+#abstraction
+#using abstact method, abstract classes
+
+from abc import ABC,abstractmethod
+
+class Car(ABC):
+
+    @abstractmethod
+    def mileage(self):
+        pass
+
+class Tesla(Car):
+    def mileage(self):
+        print("Mileage: ",30)
+
+class Duster(Car):
+    def mileage(self):
+        print("Mileage: ",24)
+
+
+t=Tesla()
+t.mileage()
