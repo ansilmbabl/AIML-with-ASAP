@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-int max_two(int x,int y)
+void max_two(int x,int y)
 {
     if (x==y)
     {
