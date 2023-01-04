@@ -11,11 +11,11 @@ int max_two(int x,int y)
     }
     else if (x>y)
     {
-        return x;
+        cout << x;
     }
     else
     {
-        return y;
+        cout << y;
     }
 }
 
@@ -26,6 +26,6 @@ int main()
     cin>>x;
     cout<<"second number: ";
     cin>>y;
-    cout<<"max of these numbers : "<< max_two(x,y);
+    max_two(x,y);
     return 0;
 }
