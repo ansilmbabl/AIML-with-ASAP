@@ -1,0 +1,71 @@
+mysqld --initialize --console 
+# initializing mysql
+# A temporary password is generated for root@localhost: uvezW+MyR8w-
+
+mysqld --console
+# starting servor
+
+pip install mysql-connector-python
+# installing mysql connector
+
+mysql -u root -p
+# client connecting
+# Enter password: uvezW+MyR8w-
+
+alter user 'root'@'localhost' identified by 'newpass';
+# creating new password
+
+show databases;
+#
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.38 sec)
+
+## creating new database from IDLE
+import mysql.connector
+
+db_connector = mysql.connector.connect(host="localhost",user="root",password="root1234")
+db_cursor = db_connector.cursor()
+db_cursor.execute("create database newdatabase2")
+#db_cursor.execute("create table stud_details(roll_no int,name varchar(20))")
+#db_cursor.execute("create table teacher_details(teacher_id int,name varchar(20)
+db_connector.close()
+
+use newdatabase
+# changing database
+
+show tables;
+#
++------------------------+
+| Tables_in_newdatabase2 |
++------------------------+
+| stud_details           |
+| teacher_details        |
++------------------------+
+2 rows in set (0.00 sec
+
+ desc stud_details;
+#
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| roll_no | int         | YES  |     | NULL    |       |
+| name    | varchar(20) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+2 rows in set (0.35 sec)
+
+mysql> desc teacher_details;
+#
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| teacher_id | int         | YES  |     | NULL    |       |
+| name       | varchar(20) | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
