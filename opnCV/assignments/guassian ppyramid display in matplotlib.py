@@ -1,4 +1,3 @@
-
 import cv2
 import matplotlib.pyplot as plt
 
@@ -17,7 +16,7 @@ for i in range(n):
 print(titles)
 #displaying in matplotlib
 for i in range(n+1):
-    plt.subplot((n+1)//2,(n+1)//2,i+1)
+    plt.subplot((n+2)//2,2,i+1)
     plt.imshow(gp[i])
     plt.title(titles[i])
     plt.xticks([])
