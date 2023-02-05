@@ -1,5 +1,6 @@
 import cv2
 import matplotlib.pyplot as plt
+import math
 
 img = cv2.imread("Resources/baboon.jpg")
 copy = img.copy()
@@ -14,9 +15,16 @@ for i in range(n):
     titles.append(name)
 
 print(titles)
+
 #displaying in matplotlib
+total_pic = n+1
+rows = int(math.sqrt(total_pic))
+columns = math.ceil(total_pic/rows)
+
+print("rows: ",rows,"Columns: ",columns)
+
 for i in range(n+1):
-    plt.subplot((n+2)//2,2,i+1)
+    plt.subplot(rows,columns,i+1)
     plt.imshow(gp[i])
     plt.title(titles[i])
     plt.xticks([])
