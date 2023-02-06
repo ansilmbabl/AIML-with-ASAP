@@ -14,7 +14,7 @@ l = Label(text = "label 1",font=("Times 12 italic bold"),fg = "red",bg = "black"
 l.pack(side = "right") # random position (top ,bottom,right,left)
 
 ## image in a label
-img = Image.open("D:\\AIML\\openCV\\1\\Resources\\jchar.png")
+img = Image.open("C:\\Resources\\jchar.png")
 resize = img.resize((56,75))
 label_img = ImageTk.PhotoImage(resize)
 l1 = Label(w,image = label_img)
