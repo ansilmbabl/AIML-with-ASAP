@@ -1,0 +1,8 @@
+introduction to Data science 
+
+some websites 
+
+https://groups.google.com/g/datameet
+https://data.gov.in/
+https://www.kaggle.com/learn
+https://github.com/awesomedata/awesome-public-datasets
