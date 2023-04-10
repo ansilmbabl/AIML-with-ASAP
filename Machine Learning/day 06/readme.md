@@ -1,2 +1,2 @@
-Polynomial Regression
+Polynomial Regression  
 SVM
